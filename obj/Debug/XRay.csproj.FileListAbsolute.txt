@@ -1,0 +1,13 @@
+C:\Users\gamer\OneDrive\Desktop\Github\FruktMods\Frukt-Xray-Organs\bin\Debug\XRay.deps.json
+C:\Users\gamer\OneDrive\Desktop\Github\FruktMods\Frukt-Xray-Organs\bin\Debug\XRay.dll
+C:\Users\gamer\OneDrive\Desktop\Github\FruktMods\Frukt-Xray-Organs\bin\Debug\XRay.pdb
+C:\Users\gamer\OneDrive\Desktop\Github\FruktMods\Frukt-Xray-Organs\obj\Debug\XRay.csproj.AssemblyReference.cache
+C:\Users\gamer\OneDrive\Desktop\Github\FruktMods\Frukt-Xray-Organs\obj\Debug\XRay.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gamer\OneDrive\Desktop\Github\FruktMods\Frukt-Xray-Organs\obj\Debug\XRay.AssemblyInfoInputs.cache
+C:\Users\gamer\OneDrive\Desktop\Github\FruktMods\Frukt-Xray-Organs\obj\Debug\XRay.AssemblyInfo.cs
+C:\Users\gamer\OneDrive\Desktop\Github\FruktMods\Frukt-Xray-Organs\obj\Debug\XRay.csproj.CoreCompileInputs.cache
+C:\Users\gamer\OneDrive\Desktop\Github\FruktMods\Frukt-Xray-Organs\obj\Debug\XRay.sourcelink.json
+C:\Users\gamer\OneDrive\Desktop\Github\FruktMods\Frukt-Xray-Organs\obj\Debug\XRay.dll
+C:\Users\gamer\OneDrive\Desktop\Github\FruktMods\Frukt-Xray-Organs\obj\Debug\refint\XRay.dll
+C:\Users\gamer\OneDrive\Desktop\Github\FruktMods\Frukt-Xray-Organs\obj\Debug\XRay.pdb
+C:\Users\gamer\OneDrive\Desktop\Github\FruktMods\Frukt-Xray-Organs\obj\Debug\ref\XRay.dll
