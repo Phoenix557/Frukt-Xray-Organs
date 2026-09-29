@@ -27,9 +27,9 @@ using Stomach = Il2CppLVA.Organs.Variants.Stomach;
 using TestOrganPiska = Il2CppLVA.Organs.Variants.TestOrganPiska;
 using Object = UnityEngine.Object;
 
-[assembly: MelonInfo(typeof(XRay.XRayMod), "X-Ray", "1.0.0", "github.com/Phoenix557")]
+[assembly: MelonInfo(typeof(XRay.XRayMod), "X-Ray", "1.1.5", "Phoenix557", "https://github.com/Phoenix557/Frukt-Xray-Organs")]
 [assembly: MelonGame("tripledose", "FRUKT")]
-[assembly: MelonAdditionalDependencies("Phx")]
+[assembly: MelonAdditionalDependencies("PhxCore")]
 
 namespace XRay
 {
@@ -41,16 +41,16 @@ namespace XRay
         bool _organsOn;
         float _refreshAt;
         bool _warned;
-        Phx.Hotkey _bonesKey;
-        Phx.Hotkey _organsKey;
+        PhxCore.Hotkey _bonesKey;
+        PhxCore.Hotkey _organsKey;
         readonly Dictionary<int, LimbBones> _limbs = new Dictionary<int, LimbBones>();
 
         public override void OnInitializeMelon()
         {
-            Phx.ModEntry mod = Phx.Mods.Register("X-Ray");
+            PhxCore.ModEntry mod = PhxCore.Mods.Register("X-Ray");
             _bonesKey = mod.Key("Bones", Key.X);
             _organsKey = mod.Key("Organs", Key.O);
-            LoggerInstance.Msg("Loaded. Press " + _bonesKey.Current + " for bones and " + _organsKey.Current + " for organs. Both can be on together. Change them under PHX PAUSE in the pause menu.");
+            LoggerInstance.Msg("Loaded. Press " + _bonesKey.Current + " for bones and " + _organsKey.Current + " for organs. Both can be on together. Change them under PHX MODS in the pause menu.");
         }
 
         public override void OnSceneWasLoaded(int buildIndex, string sceneName)

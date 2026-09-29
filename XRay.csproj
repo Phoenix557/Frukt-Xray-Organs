@@ -60,13 +60,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Frukt-PhxPauseMenu\Phx.csproj">
+    <ProjectReference Include="..\..\Frukt-Mods\Frukt-PhxCore\PhxCore.csproj">
       <Private>false</Private>
     </ProjectReference>
   </ItemGroup>
 
   <Target Name="CopyToMods" AfterTargets="Build">
-    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(GameDir)\Mods" Condition="Exists('$(GameDir)\Mods')" ContinueOnError="true" />
     <MakeDir Directories="$(GameDir)\UserData\HotReload" Condition="Exists('$(GameDir)\UserData')" />
     <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(GameDir)\UserData\HotReload" Condition="Exists('$(GameDir)\UserData\HotReload')" ContinueOnError="true" />
     <Copy SourceFiles="$(TargetDir)$(TargetName).pdb" DestinationFolder="$(GameDir)\UserData\HotReload" Condition="Exists('$(TargetDir)$(TargetName).pdb') And Exists('$(GameDir)\UserData\HotReload')" ContinueOnError="true" />

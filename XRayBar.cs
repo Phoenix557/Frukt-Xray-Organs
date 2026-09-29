@@ -37,7 +37,7 @@ namespace XRay
             _canvas = null;
         }
 
-        internal static void Tick(Phx.Hotkey bonesKey, Phx.Hotkey organsKey, bool bonesOn, bool organsOn, Action toggleBones, Action toggleOrgans)
+        internal static void Tick(PhxCore.Hotkey bonesKey, PhxCore.Hotkey organsKey, bool bonesOn, bool organsOn, Action toggleBones, Action toggleOrgans)
         {
             if (_bones == null || _organs == null)
             {
@@ -195,7 +195,7 @@ namespace XRay
             rect.anchoredPosition = anchored;
         }
 
-        static void Build(Phx.Hotkey bonesKey, Phx.Hotkey organsKey, Action toggleBones, Action toggleOrgans)
+        static void Build(PhxCore.Hotkey bonesKey, PhxCore.Hotkey organsKey, Action toggleBones, Action toggleOrgans)
         {
             ToolbarView view = Object.FindFirstObjectByType<ToolbarView>();
             if (view == null || view.m_slotsViews == null || view.m_slotsViews.Length == 0)
@@ -268,7 +268,7 @@ namespace XRay
             return width;
         }
 
-        static ToolbarItemSlotView MakeSlot(ToolbarItemSlotView proto, RectTransform parent, string name, Sprite icon, Phx.Hotkey key, Action toggle, float slotSize)
+        static ToolbarItemSlotView MakeSlot(ToolbarItemSlotView proto, RectTransform parent, string name, Sprite icon, PhxCore.Hotkey key, Action toggle, float slotSize)
         {
             ToolbarItemSlotView slot = Object.Instantiate(proto, parent, false);
             slot.gameObject.name = name;
@@ -312,7 +312,7 @@ namespace XRay
             return slot;
         }
 
-        static void Paint(ToolbarItemSlotView slot, Phx.Hotkey key, bool on, ref bool lit)
+        static void Paint(ToolbarItemSlotView slot, PhxCore.Hotkey key, bool on, ref bool lit)
         {
             if (slot == null)
                 return;
@@ -357,7 +357,7 @@ namespace XRay
                 slot.m_keySlot.transform.SetAsLastSibling();
         }
 
-        static string Letter(Phx.Hotkey key)
+        static string Letter(PhxCore.Hotkey key)
         {
             if (key == null)
                 return "";
